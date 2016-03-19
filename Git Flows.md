@@ -44,3 +44,9 @@ git reset --hard
 ```
 git reset --hard <sha1-commit-id>
 ```
+
+### Modify last commit
+
+```
+git commit --amend (You shouldn't amend published commits!)
+```
