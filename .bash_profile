@@ -60,7 +60,7 @@ git-init() {
 }
 
 # Creating repo on github
-github-create() {
+github-init() {
  
  	# added this line because once an error occures invalid_credentials keeps its value as 1
  	# set invalid_credentials to 0 if it is 1	
