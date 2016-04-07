@@ -50,3 +50,11 @@ git reset --hard <sha1-commit-id>
 ```
 git commit --amend (You shouldn't amend published commits!)
 ```
+
+### Remove folder or file from previous history
+```
+git filter-branch --index-filter 'git rm -r --cached --ignore-unmatch <foldername>/'
+```
+```
+git filter-branch --index-filter 'git rm --cached --ignore-unmatch <filename>'
+```
