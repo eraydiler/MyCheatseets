@@ -22,6 +22,9 @@ alias open-bash-profile='open -a "TextMate" ~/.bash_profile'
 # To reset bash_profile
 alias reload="source ~/.bash_profile"
 
+# Restart mDNSResponder to fix broken connection https://gist.github.com/mipmip/1844353
+alias restartDNS='sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.mDNSResponder.plist;
+				  sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.mDNSResponder.plist'
 # Notes:
 # If you want to find a file with path use this : echo `pwd`/`ls <filename>`
 # Setting PATH for Python 3.4
