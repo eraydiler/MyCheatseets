@@ -58,3 +58,13 @@ git filter-branch --index-filter 'git rm -r --cached --ignore-unmatch <foldernam
 ```
 git filter-branch --index-filter 'git rm --cached --ignore-unmatch <filename>'
 ```
+
+#### <a name="undo">Stash</a>
+
+### Stashing specific files
+
+First, stage the files that you don't want to be stashed. 
+
+```
+git stash save --keep-index
+```
